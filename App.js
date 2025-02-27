@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { Provider as PaperProvider } from 'react-native-paper';
+import HomeScreen from './src/Components/HomeScreen/HomeScreen';
+import Header from './src/Components/Header/Header';
 
-export default function App() {
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello world!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <PaperProvider>
+      <Header />
+      <HomeScreen />
+    </PaperProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+export default App;
