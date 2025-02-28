@@ -1,4 +1,4 @@
-# reactnatice_todoapp
+# reactnative_todoapp
 react native todo app
 # Welcome to your Expo app 👋
 
